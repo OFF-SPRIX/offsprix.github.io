@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DE DADOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JOGO DE DADOS</h1>
+        <input type="number" id="numDice" placeholder="Número de dados (max 100)" min="1" max="100">
+        <button id="rollButton">Rolar Dados</button>
+        <div id="diceContainer"></div>
+        <div id="results">
+            <p id="total">Soma: -</p>
+            <p id="average">Média: -</p>
+            <p id="mostFrequent">Número mais frequente: -</p>
+        </div>
+        <button id="downloadPdfButton">Baixar PDF</button>
+        <canvas id="diceChart" width="300" height="150"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="script.js"></script>
+</body>
+</html>

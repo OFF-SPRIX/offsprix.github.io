@@ -1,0 +1,90 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffe3fd;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6a1270;
+    font-size: 2em;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #6a0572;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a0572;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #500d66;
+}
+
+#diceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: linear-gradient(135deg, #6a0572, #ff00c8);
+    color: #fff;
+    border-radius: 15px;
+    animation: roll 1s ease-in-out;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    margin: 5px 0;
+    color: #6a0572;
+    font-size: 1.2em;
+}
