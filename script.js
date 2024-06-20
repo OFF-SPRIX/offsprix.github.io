@@ -6,7 +6,7 @@ let chart;
 
 function rollDice() {
     const numDice = parseInt(document.getElementById('numDice').value);
-    if (isNaN(numDice) || numDice < 1 || numDice > 100) {
+    if (isNaN(numDice) || numDice < 1 || numDice > 100000000) {
         alert('Por favor, insira um número válido de dados entre 1 e 100.');
         return;
     }
